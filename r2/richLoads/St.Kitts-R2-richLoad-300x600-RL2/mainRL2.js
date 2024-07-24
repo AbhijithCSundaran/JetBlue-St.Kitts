@@ -11,39 +11,39 @@ var tl;
 
 
 //@FT VARIABLE DECLARATIONS
-var showDefault=false,
-    thisFeedLoaded=false,
-    ctURL = "",
-    defaultPrice = "69",
-    origin_formatted="",
-    lowestfare_faredollaramount="",
-    destination_formatted="";
+var showDefault = false,
+  thisFeedLoaded = false,
+  ctURL = "",
+  defaultPrice = "69",
+  origin_formatted = "",
+  lowestfare_faredollaramount = "",
+  destination_formatted = "";
 
 var price = myFT.$("#price"),
-    startingAt = myFT.$("#starting_at"), 
-    priceText = myFT.$("#priceText"),
-    dollarSign = myFT.$("#dollar"),
-    subhead = myFT.$("#subhead"),
-    terms1 = myFT.$("#terms1"),
-    terms2 = myFT.$("#terms2"),
-    oneWay = myFT.$(".one_way"),
-    default_exit = myFT.$("#default_exit"),
-    h4 = myFT.$("#h4");
+  startingAt = myFT.$("#starting_at"),
+  priceText = myFT.$("#priceText"),
+  dollarSign = myFT.$("#dollar"),
+  subhead = myFT.$("#subhead"),
+  terms1 = myFT.$("#terms1"),
+  terms2 = myFT.$("#terms2"),
+  oneWay = myFT.$(".one_way"),
+  default_exit = myFT.$("#default_exit"),
+  h4 = myFT.$("#h4");
 
 //@FT Setting local variable values using FT dynamic variables (instantAds)
-ctURL           = myFT.instantAds.Retail_default_clickTag_URL
-headline_color  = myFT.instantAds.headline_color;
-subhead_color   = myFT.instantAds.subhead_color;
-price_color     = myFT.instantAds.price_color;
-oneWay_color    = myFT.instantAds.oneWay_color;
-legal_color     = myFT.instantAds.legal_color;
-oneWay_txt      = myFT.instantAds.one_way_text;
-terms_txt       = myFT.instantAds.restrictions_text;
+ctURL = myFT.instantAds.Retail_default_clickTag_URL
+headline_color = myFT.instantAds.headline_color;
+subhead_color = myFT.instantAds.subhead_color;
+price_color = myFT.instantAds.price_color;
+oneWay_color = myFT.instantAds.oneWay_color;
+legal_color = myFT.instantAds.legal_color;
+oneWay_txt = myFT.instantAds.one_way_text;
+terms_txt = myFT.instantAds.restrictions_text;
 
-headline1_txt   = myFT.instantAds.headline1_text + myFT.instantAds.headline2_text;
+headline1_txt = myFT.instantAds.headline1_text + myFT.instantAds.headline2_text;
 
-function checkURL(u){
-  if (u.indexOf("http://")==0||u.indexOf("https://")==0) { 
+function checkURL(u) {
+  if (u.indexOf("http://") == 0 || u.indexOf("https://") == 0) {
     return true
   } else {
     return false
@@ -66,11 +66,11 @@ function setupContent() {
 
 
 
-// h4[0].innerHTML +=
-//  "<span class='sm blue'>Daily nonstop flights from</span><br><span class='blue city'>" + "" + "</span> <span class='blue to'>to</span> <span class='blue city'>" + "" + "</span>";
+  h4[0].innerHTML +=
+    "<span class='sm blue'>Nonstop flights from </span> <br><span class='blue city'>" + "NYC" + "</span> <span class='blue to'>to</span><br> <span class='blue city'>" + "St. Kitts" + "</span>";
 
-   h4[0].innerHTML +=
-   "<span class='sm blue'>Nonstop flights from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to<br></span> <span class='blue city'>" + destination_formatted + "</span>";
+  //  h4[0].innerHTML +=
+  //  "<span class='sm blue'>Nonstop flights from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to<br></span> <span class='blue city'>" + destination_formatted + "</span>";
 
   if (showDefault) {
     h4[0].innerHTML = "<span class='blue'>Fly with a sky-high experience at<br/>down-to-earth fares.</span>"; // - Populates main headline
@@ -104,42 +104,42 @@ function setupContent() {
 
 //@FT Listener function for the custom dispatched event "theFeedLoaded")" (from base file)
 // 'theFeedLoaded' contains the feed data
-myFT.on('theFeedLoaded', function(e) {
+myFT.on('theFeedLoaded', function (e) {
   //console.log('RL1: Richload recieved feed from Base file)');
   feedLoaded(e.a);
 });
 
 //@FT Feed data callback function
-function feedLoaded(feed){
-  if(!thisFeedLoaded){
-    thisFeedLoaded=true;
-    try{
+function feedLoaded(feed) {
+  if (!thisFeedLoaded) {
+    thisFeedLoaded = true;
+    try {
 
-        lowestfare_faredollaramount = feed[0].lowestfare_faredollaramount;
-        origin_formatted = feed[0].origin_formatted;
-        destination_formatted = feed[0].destination_formatted;
-        ctURL = checkURL(myFT.instantAds.Retail_dynamic_clickTag_URL) ? myFT.instantAds.Retail_dynamic_clickTag_URL : feed[0]['url'];
+      lowestfare_faredollaramount = feed[0].lowestfare_faredollaramount;
+      origin_formatted = feed[0].origin_formatted;
+      destination_formatted = feed[0].destination_formatted;
+      ctURL = checkURL(myFT.instantAds.Retail_dynamic_clickTag_URL) ? myFT.instantAds.Retail_dynamic_clickTag_URL : feed[0]['url'];
 
-        if(lowestfare_faredollaramount == "0"){
-            //console.log('load default');
-            showDefault = true;
-        }
-    }catch(error){
-        //Feed error handling done within base file
-        //If no feed available, show default content
+      if (lowestfare_faredollaramount == "0") {
+        //console.log('load default');
         showDefault = true;
+      }
+    } catch (error) {
+      //Feed error handling done within base file
+      //If no feed available, show default content
+      showDefault = true;
     }
     setupContent();
   }
 }
 
-myFT.on('RL2_play' , function(){
+myFT.on('RL2_play', function () {
   //console.log("RL2: RL2_play event triggered")
   init();
 });
 
-default_exit.on("click",function(){
-    myFT.clickTag(1, ctURL);
+default_exit.on("click", function () {
+  myFT.clickTag(1, ctURL);
 })
 
 
@@ -155,13 +155,13 @@ function init() {
 }
 function animate() {
   myFT.dispatch('show_RL2');
-  tl.set(['#main_content'], {y:"+=500", autoAlpha: 1, force3D: true })
-  tl.set(['#h4', '#priceHolder', '#cta', '.terms', '#terms_container'], {autoAlpha: 1, force3D: true })
-  .set(["#cta"], { force3D: true, rotation: .001 })
+  tl.set(['#main_content'], { y: "+=500", autoAlpha: 1, force3D: true })
+  tl.set(['#h4', '#priceHolder', '#cta', '.terms', '#terms_container'], { autoAlpha: 1, force3D: true })
+    .set(["#cta"], { force3D: true, rotation: .001 })
     .addLabel('frame_4')
     // .staggerTo(['#h4', '#priceHolder', '#cta', '.terms', '#terms_container'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, 0.3, 'frame_4')
-  .to('#main_content', 1.1, { y:"-=500", ease: Back.easeOut.config(.3)})
-  .to('#terms2', .1, {autoAlpha: 1, ease: Power1.easeInOut })
+    .to('#main_content', 1.1, { y: "-=500", ease: Back.easeOut.config(.3) })
+    .to('#terms2', .1, { autoAlpha: 1, ease: Power1.easeInOut })
 }
 
 

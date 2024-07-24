@@ -81,11 +81,11 @@ function setupContent() {
     h4[0].style.color = headline_color;
     h4[0].innerHTML = ""; // - Populates main headline
 
-//  h4[0].innerHTML +=
-//  "<span class='sm blue'>Daily nonstop flights from  </span><br><span class='blue city'>" + "" + "</span> <span class='blue to'>to</span> <span class='blue city'>" + "" + "</span>";
+    h4[0].innerHTML +=
+    "<span class='sm blue'>Nonstop flights from </span> <br><span class='blue city'>" + "NYC" + "</span> <span class='blue to'>to</span> <span class='blue city'>" + "St. Kitts" + "</span>";
 
-     h4[0].innerHTML +=
-   "<span class='sm blue'>Nonstop flights from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to</span><br><span class='blue city'>" + destination_formatted + "</span>";
+  //    h4[0].innerHTML +=
+  //  "<span class='sm blue'>Nonstop flights from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to</span><br><span class='blue city'>" + destination_formatted + "</span>";
 
 
     const myH4 = document.getElementById('h4')
@@ -104,17 +104,17 @@ function setupContent() {
     console.log(myCityCharLength)
     if (myCityCharLength > 22) {
       // myCities.style.paddingTop = "2px"
-      myH4.style.lineHeight = "1.25";
+      myH4.style.lineHeight = "1";
     } else if (myCityCharLength > 18) {
-      myCity[0].style.fontSize = "18px"
-      myCity[1].style.fontSize = "18px"
+      myCity[0].style.fontSize = "15px"
+      myCity[1].style.fontSize = "15px"
       // myCities.style.paddingTop = "2px"
-      myH4.style.lineHeight = "1.133";
+      myH4.style.lineHeight = "1.05";
     } else {
-      myCity[0].style.fontSize = "18px"
-      myCity[1].style.fontSize = "18px"
+      myCity[0].style.fontSize = "16px"
+      myCity[1].style.fontSize = "16px"
       // myCities.style.paddingTop = "2px"
-      myH4.style.lineHeight = "1.056";
+      myH4.style.lineHeight = "1.1";
     }
 
   }

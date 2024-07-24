@@ -5,6 +5,7 @@ body * {
   padding: 0;
   margin: 0;
 }
+
 img {
   border: 0;
 }
@@ -90,9 +91,9 @@ video {
 #text_holder {
   color: #0000AA;
   font-family: "DESKlarheitGrotesk Xbd";
-  font-size: 30px;
-  letter-spacing: -0.02em;
-  line-height:30px;
+  font-size: 32px;
+  letter-spacing: -0.15px;
+  line-height: 1;
 }
 
 #blueBottomCard {
@@ -114,38 +115,40 @@ video {
 #h1,
 #h2 {
   width: 260px;
-  height: 74px;
-  left: 20px;
-  top: 292px;
-/*  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);    */
+  /* height: 74px; */
+  left: 24px;
+  top: 50px;
+  /*  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);    */
 }
-#h1 span{
+
+#h1 span {
   font-size: 22.5px;
 }
-#h2{
-  top: 325px;
-}
-#h2 span{
+
+
+
+#h2 span {
   color: #00E1FF;
 }
-#h2 .asterisk{
+
+#h2 .asterisk {
   font-size: 11px;
   line-height: 10px;
 }
 
 /* endframe text */
 
-#h3{
+#h3 {
   left: 20px;
   top: 60px;
   width: 260px;
 }
 
-#h3 #invisible{
+#h3 #invisible {
   opacity: 0;
 }
 
-#price{
+#price {
   position: relative;
   display: inline-block;
   font-family: "DINOT bold";
@@ -194,7 +197,7 @@ video {
   height: auto;
   background-color: #FFFFFF;
   border-radius: 4px;
-  color: #0033A0;
+  color: #0000AA;
   font-family: "DINOT bold";
   text-align: center;
   font-size: 17px;
@@ -247,7 +250,7 @@ video {
   /* justify-content: space-between; */
 }
 
-#logoHolder > * {
+#logoHolder>* {
   position: relative
 }
 
@@ -256,7 +259,7 @@ video {
   height: auto;
 }
 
-#partner_logo_container{
+#partner_logo_container {
   width: 0;
   height: 61px;
   z-index: 1501;
@@ -264,14 +267,14 @@ video {
   white-space: nowrap;
 }
 
-#partner_logo_img{
+#partner_logo_img {
   width: 140px;
   height: 61px;
   object-fit: contain;
   object-position: left;
 }
 
-#cta img{
+#cta img {
   top: -10px;
   transform-origin: 77px 191px;
   background-color: none;
@@ -312,10 +315,11 @@ video {
 }
 
 
-#photo, #photo2 {
-  width: 390px;
+#photo,
+#photo2 {
+  width: 360px;
   height: auto;
-/*   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); full display version 
+  /*   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); full display version 
   clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);*/
 }
 

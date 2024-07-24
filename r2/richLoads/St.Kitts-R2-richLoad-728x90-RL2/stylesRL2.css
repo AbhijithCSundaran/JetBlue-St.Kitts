@@ -5,6 +5,7 @@ body * {
   padding: 0;
   margin: 0;
 }
+
 img {
   border: 0;
 }
@@ -88,24 +89,22 @@ video {
 
 
 #text_holder {
-  width: 478px;
   height: 70px;
   display: flex;
-  justify-content: space-between;
-  color: #0000aa;
+  align-items: center;
   font-family: "ESKlarheitGrotesk Smbd";
-  letter-spacing: -0.414px;
-  top: 9px;
+  letter-spacing: -0.4px;
+  top: 7px;
   left: 20px;
-
+  width: 455px;
 }
 
-#text_holder > * {
+#text_holder>* {
   position: relative;
 }
 
 #headline {
-  top: -5px;
+  top: 0;
   display: flex;
   align-items: center;
 }
@@ -115,92 +114,87 @@ video {
 }
 
 .blue {
-  color: #0000aa;;
+  color: #0000aa;
 }
 
 .orange {
   color: #FF8300;
 }
 
-.city{
-/*  font-size: 11px;
+.city {
+  /*  font-size: 11px;
   line-height: 16px;*/
   font-family: "ESKlarheitGrotesk Xbd";
 }
-.to{
-  color: #fff;
+
+.to {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 12px;
-  line-height: 16px;
-  color: #0000aa;;
 }
 
-#h4{
+#h4 {
   white-space: nowrap;
   font-family: "ESKlarheitGrotesk Smbd";
-  letter-spacing: -0.414px;
-  width: 250px;
+  letter-spacing: -0.4px;
+  width: 188px;
   position: relative;
   margin-bottom: 0px;
 }
 
 #priceHolder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-right: 15px;
+  margin-top: 0px;
   font-family: "ESKlarheitGrotesk Smbd";
-  left: -30px;
 }
 
 #starting_at {
   font-family: "ESKlarheitGrotesk Smbd";
-  margin-left: 3px;
-  margin-top: -3px;
-  color: #0000aa;
+  margin-left: 1px;
   font-size: 10px;
   position: relative;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.4px;
 }
 
-#price{
-  margin-top: 5px;
+#price {
+  margin-top: 7px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  font-family:  "ESKlarheitGrotesk Xbd";
+  font-family: "ESKlarheitGrotesk Xbd";
 }
 
 #price .dollar {
-  font-size: 22px;
+  font-size: 25px;
   position: relative;
-  margin-top: -3px;
+  margin-top: -5px;
   margin-right: 5px;
 }
 
 
 #price .number {
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 46px;
-  margin-top: -7px;
-  margin-left: -3px;
+  font-size: 40px;
+  margin-top: -4px;
+  margin-left: -5px;
   position: relative;
+  letter-spacing: 1.7px;
 }
 
 .one_way {
   font-family: "ESKlarheitGrotesk Smbd";
   margin-top: 10px;
-  margin-left: 3px;
+  margin-left: 2px;
   font-size: 12px;
-  line-height: 11px;
+  letter-spacing: -0.1px;
+  line-height: 0.9;
   position: relative;
-  color: #0000aa;
+  width: 30px;
 }
 
 #price .asterisk {
-  font-family:  "ESKlarheitGrotesk Smbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 8px;
   line-height: 3px;
   position: relative;
@@ -208,20 +202,21 @@ video {
 }
 
 #cta {
-  align-self: center;
-  width: 130px;
-  height: 14px;
-  background-color:#0000aa;
+  /* align-self: center;  */
+  width: 95px;
+  /* height: 14px; */
+  background-color: #0000aa;
   border-radius: 7px;
   color: #fff;
-  font-family:  "ESKlarheitGrotesk Smbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   text-align: center;
-  font-size: 12px;
-  line-height: 13px;
-  padding: 8px 0px;
+  font-size: 10px;
+  line-height: 1;
+  padding: 9px 0px;
   transform-origin: 50% 50%;
   position: relative;
-  left: -20px;
+  margin-left: auto;
+  margin-top: 14px;
 }
 
 .terms {
@@ -243,7 +238,7 @@ video {
   left: 16px;
   top: 78px;
   width: 300px;
-  color: #0000aa;;
+  color: #0000aa;
 }
 
 #logo {
@@ -301,15 +296,15 @@ video {
 }
 
 
-.sm{
+.sm {
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: .8px;
+  letter-spacing: 0px;
 }
 
 
 #bgPanel {
   top: 0px;
   left: 0px;
-/*  z-index: 150;*/
+  /*  z-index: 150;*/
 }
