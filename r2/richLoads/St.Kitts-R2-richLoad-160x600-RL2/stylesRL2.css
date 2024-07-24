@@ -5,6 +5,7 @@ body * {
   padding: 0;
   margin: 0;
 }
+
 img {
   border: 0;
 }
@@ -96,13 +97,13 @@ video {
   font-family: "DINOT bold";
   font-size: 17px;
   /* line-height: 20px; */
-  letter-spacing: -0.414px;
-  top: 51px;
-  left: 14px;
+  letter-spacing: -0.1px;
+  top: 94px;
+  left: 10px;
   width: 144px;
 }
 
-#text_holder > * {
+#text_holder>* {
   position: relative;
 }
 
@@ -114,17 +115,19 @@ video {
   color: #FF8300;
 }
 
-.city{
+.city {
   font-size: 17px;
   line-height: 20px;
   letter-spacing: -0.414px;
   font-family: "ESKlarheitGrotesk Xbd";
 }
-.to{
+
+.to {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 12px;
 }
-.startingAt{
+
+.startingAt {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 13px;
   position: relative;
@@ -133,18 +136,18 @@ video {
 }
 
 .asterisk {
-  font-family:  "ESKlarheitGrotesk Smbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 20px;
 }
 
-#h4{
+#h4 {
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 17px;
   line-height: 20px;
-  letter-spacing: -0.414px;
+  letter-spacing: 0px;
   width: 140px;
   position: relative;
-  top: 40px;
+  top: 0px;
 }
 
 #h4 .asterisk {
@@ -157,84 +160,92 @@ video {
 #priceHolder {
   display: flex;
   flex-direction: column;
-  margin-top: 70px;
-  margin-bottom: 35px;
+  margin-top: 23px;
+  margin-bottom: 43px;
 }
 
-#starting_at{
-/*  color: #FFFFFF;*/
+#starting_at {
+  /*  color: #FFFFFF;*/
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 13px;
+  font-size: 12px;
   position: relative;
   /* margin-left: 22px; */
   margin-bottom: -5px;
   position: relative;
 }
 
-#price{
+#price {
   position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family:  "ESKlarheitGrotesk Smbd";
-  letter-spacing: -0.414px;
+  font-family: "ESKlarheitGrotesk Smbd";
+  letter-spacing: 0.1px;
   width: 140px;
   left: 0px;
 }
 
 .dollar {
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 26px;
+  font-size: 24px;
   position: relative;
   margin-top: 12px;
 }
 
 #price .number {
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 50px;
+  font-size: 43px;
   top: 10px;
   left: -2px;
   position: relative;
   display: table;
 }
+
 .number_3_char {
-  top: 5px  !important;
+  top: 5px !important;
   font-size: 42px !important;
 }
-.dollar_3_char{
+
+.dollar_3_char {
   font-size: 23px !important;
 }
-.one_way_3_char{
-  left: 2px  !important;
-  top: 16px  !important;
-  font-size: 16px  !important;
-  line-height: 14px  !important;
+
+.one_way_3_char {
+  left: 2px !important;
+  top: 16px !important;
+  font-size: 16px !important;
+  line-height: 14px !important;
 }
-.one_way_4_char{
-  left: 2px  !important;
-  top: 16px  !important;
-  font-size: 14px  !important;
-  line-height: 12px  !important;
+
+.one_way_4_char {
+  left: 2px !important;
+  top: 16px !important;
+  font-size: 14px !important;
+  line-height: 12px !important;
 
 }
+
 .number_4_char {
-  top: 5px  !important;
+  top: 5px !important;
   font-size: 37px !important;
 }
-.dollar_4_char{
+
+.dollar_4_char {
   font-size: 21px !important;
 
 }
+
 #price .one_way {
   left: 0px;
   margin-top: 28px;
-  font-size: 15px;
-  line-height: 0.8;
+  margin-left: 2px;
+  font-size: 12px;
+  letter-spacing: -0.4px;
   position: relative;
 }
 
 #price .asterisk {
-  font-family:  "ESKlarheitGrotesk Smbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 12px;
   position: relative;
   top: -3px;
@@ -245,15 +256,15 @@ video {
   /* top: 78px; */
   width: 110px;
   height: 20px;
-  background-color:#0000aa;
+  background-color: #0000aa;
   border-radius: 7px;
   color: #fff;
-  font-family:  "ESKlarheitGrotesk Smbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   text-align: center;
   font-size: 12px;
   line-height: 19px;
-  letter-spacing: -0.374px;
-  padding: 5px 0px;
+  letter-spacing: -0.3px;
+  padding: 6px 0px;
   transform-origin: 50% 50%;
 }
 
@@ -270,17 +281,17 @@ video {
 
 #terms1 {
   left: 11px;
-  top: 567px;
+  top: 569px;
   width: 300px;
 }
 
 #terms2 {
   left: 75px;
-  top: 578px;
+  top: 580px;
   width: 300px;
 }
 
-.asterisk{
+.asterisk {
   font-size: 7px;
 }
 
@@ -310,16 +321,15 @@ video {
 }
 
 
-.sm{
+.sm {
   font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: .2px;
+  line-height: 1.4;
+  letter-spacing: 0px;
   display: block;
 }
 
 
 #bgPanel {
   top: 0px;
-/*  z-index: 150;*/
+  /*  z-index: 150;*/
 }
-

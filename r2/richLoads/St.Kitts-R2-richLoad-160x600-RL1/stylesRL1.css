@@ -5,6 +5,7 @@ body * {
   padding: 0;
   margin: 0;
 }
+
 img {
   border: 0;
 }
@@ -85,11 +86,11 @@ video {
 
 
 #text_holder {
-  color: #0000AA;
+  color: #fff;
   font-family: "ESKlarheitGrotesk Xbd";
-  font-size: 21px;
-  letter-spacing: -0.414px;
-  line-height: 26px;
+  font-size: 23px;
+  letter-spacing: -0.1px;
+  line-height: 1.1;
 }
 
 #blueBottomCard {
@@ -111,39 +112,37 @@ video {
 #h1,
 #h2 {
   width: 200px;
-  height: 74px;
-  left: 13px;
-  top: 20.64px;
-/*  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);*/
+  /* height: 74px; */
+  left: 0;
+  top: 38px;
+  padding-left: 9px;
+  /*  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);*/
 }
-#h2{
-  color: #0000AA;
-}
-#h2 .asterisk{
-  font-size: 11px;
-  line-height: 10px;
+
+#h2 {
+  top: 329px
 }
 
 /* endframe text */
 
-#h3{
+#h3 {
   left: 16px;
   top: 46px;
   width: 140px;
 }
 
-#h3 #invisible{
+#h3 #invisible {
   opacity: 0;
 }
 
 /* terms and logo text */
 
 .terms {
-  color: #fff;
+  color: #0000AA;
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
-  letter-spacing: -0.02em;
-  line-height: 11px;
+  letter-spacing: -0.1px;
+  line-height: 1.5;
   left: 0px;
   width: 250px;
   text-align: left;
@@ -162,7 +161,7 @@ video {
 }
 
 #termsCopyright {
-  top: 567px;
+  top: 570px;
   left: 0px;
   text-align: center;
   width: 160px;
@@ -202,7 +201,7 @@ video {
   justify-content: space-between;
 }
 
-#logoHolder > *{
+#logoHolder>* {
   position: relative
 }
 
@@ -221,7 +220,7 @@ video {
 } */
 
 /* Stacked Logo */
-#partner_logo_container{
+#partner_logo_container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -231,14 +230,14 @@ video {
   white-space: nowrap;
 }
 
-#partner_logo_img{
+#partner_logo_img {
   width: 76.5px;
   height: 48px;
   object-fit: contain;
   object-position: left;
 }
 
-#cta img{
+#cta img {
   top: -10px;
   transform-origin: 77px 191px;
   background-color: none;
@@ -280,11 +279,12 @@ video {
 }
 
 
-#photo, #photo2 {
+#photo,
+#photo2 {
   width: 240px;
   height: auto;
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); full display version */
-/*  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);*/
+  /*  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);*/
 }
 
 #bubbles {
