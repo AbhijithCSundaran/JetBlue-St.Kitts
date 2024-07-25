@@ -280,9 +280,10 @@ video {
 
 
 #terms1 {
-  left: 11px;
+  left: 0;
   top: 569px;
-  width: 300px;
+  width: 100%;
+  text-align: center;
 }
 
 #terms2 {
