@@ -229,7 +229,7 @@ video {
 .terms {
   color: #fff;
   position: absolute;
-  font-family: "ESKlarheitGrotesk Xbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   letter-spacing: -0.02em;
   line-height: 9px;
@@ -237,7 +237,7 @@ video {
 
 
 #terms1 {
-  left: 18px;
+  left: 22px;
   top: 577px;
   width: 300px;
 }
