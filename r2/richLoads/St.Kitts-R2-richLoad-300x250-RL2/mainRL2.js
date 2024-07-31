@@ -199,6 +199,8 @@ default_exit.on("click", function () {
 function init() {
   // Set Banner duration timer
   startTime = new Date();
+  let year = startTime.getFullYear();
+  document.getElementById("year").innerHTML = year;
   // Set Global Timeline
   tl = new TimelineMax({ onComplete: endTime });
   animate();
