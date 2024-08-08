@@ -5,8 +5,8 @@ FT.manifest({
 	"clickTagCount": 3,
 	"hideBrowsers": ["ie8"],
 	"richLoads": [
-		{"name": "RL1", "src": "St.Kitts-R2-richLoad-728x90-RL1"},
-		{"name": "RL2", "src": "St.Kitts-R2-richLoad-728x90-RL2"}
+		{"name": "RL1", "src": "05768_JetBlue_StKitts_Best_Kept_Secret_Route2_728x90_RL1"},
+		{"name": "RL2", "src": "05768_JetBlue_StKitts_Best_Kept_Secret_Route2_728x90_RL2"}
 	],
     "instantAds": [
 		{"name": "RL1", 						"type": "richLoad"},

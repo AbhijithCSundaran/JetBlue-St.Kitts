@@ -1,12 +1,12 @@
 FT.manifest({
 	"filename": "index.html",
-	"width": 160,
-	"height": 600,
+	"width": 300,
+	"height": 250,
 	"clickTagCount": 3,
 	"hideBrowsers": ["ie8"],
 	"richLoads": [
-		{"name": "RL1", "src": "St.Kitts-R2-richLoad-160x600-RL1"},
-		{"name": "RL2", "src": "St.Kitts-R2-richLoad-160x600-RL2"}
+		{"name": "RL1", "src": "05768_JetBlue_StKitts_Cuisine_Route1_300x250_RL1"},
+		{"name": "RL2", "src": "05768_JetBlue_StKitts_Cuisine_Route1_300x250_RL2"}
 	],
     "instantAds": [
 		{"name": "RL1", 						"type": "richLoad"},
@@ -25,7 +25,7 @@ FT.manifest({
 		{"name": "CTA_text_color",				"type": "text", 			"default": "#00205B"},
 		{"name": "headline1_text",				"type": "text",				"default": "Fly with JetBlue<br>"},
 		{"name": "headline2_text",				"type": "text",				"default": ""},
-		{"name": "one_way_text",					"type": "text",			"default": "one<br/>way<sup class='asterisk'>&ast;&ast;</sup>"},
+		{"name": "one_way_text",					"type": "text",			"default": "one<br>way<sup class='asterisk'>&ast;&ast;</sup>"},
 		{"name": "seeDetails_button_text",			"type": "text",			"default": ""},
 		{"name": "seeDetails_body_text",			"type": "text",			"default": ""},
 		{"name": "restrictions_text",				"type": "text",			"default": "<span class='asterisk'>&ast;</span>Restrictions apply, base fare only."},
