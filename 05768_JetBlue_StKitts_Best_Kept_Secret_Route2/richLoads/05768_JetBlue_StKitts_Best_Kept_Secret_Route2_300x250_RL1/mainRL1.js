@@ -127,7 +127,7 @@ function animate() {
   tl.addLabel('frame_END', '+=4.5')
   tl.addLabel('frame_2', 3.5)
     .to(['#photo, #photo2'], 1, { x: "-=300", ease: Power1.easeInOut }, "frame_2")
-    .to(['#h1b, #h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame2")
+    .to(['#h2'], 0.5, { autoAlpha: 1, ease: Power1.easeInOut }, "frame2")
     .to('#photo2', 5, { x: "-=60", ease: "none" }, "frame_2+=1")
 
     ////////////////////////////////////////

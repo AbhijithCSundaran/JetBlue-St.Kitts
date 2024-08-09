@@ -231,13 +231,13 @@ video {
 #terms1 {
   left: 527px;
   top: 76px;
-  width: 300px;
+  width: auto;
 }
 
 #terms2 {
   left: 16px;
   top: 78px;
-  width: 300px;
+  width: auto;
   color: #0000aa;
 }
 
