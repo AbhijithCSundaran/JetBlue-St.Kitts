@@ -139,9 +139,12 @@ video {
 .terms {
   color: #0000AA;
   font-family: "ESKlarheitGrotesk Smbd";
-  font-size: 7px;
-  line-height: 7px;
+  font-size: 16px;
+  line-height: 1;
   letter-spacing: -0.01em;
+  transform: scale(0.438);
+  transform-origin: left top;
+  width: max-content;
 }
 
 .terms .asterisk {
@@ -151,18 +154,18 @@ video {
 #terms1 {
   left: 20px;
   top: 76px;
-  width: 275px;
+  /* width: 275px; */
 }
 
 #terms2 {
   left: 20px;
   top: 73px;
-  width: 275px;
+  /* width: 275px; */
 }
 
 #termsCopyrightHolder {
   color: #00205C;
-  width: 212px;
+  width: auto;
   top: 76px;
   left: 516px;
   display: flex;
